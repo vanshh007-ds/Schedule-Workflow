@@ -6,8 +6,8 @@ on:
 
 jobs:
   run-script:
-    runs-On: ubuntu-latest
+    runs-on: ubuntu-latest  # FIXED: 'runs-on' must be lowercase and indented properly
 
-steps:
-  - name: Print Message
-    run: echo "Schedule Workflow"
+    steps:
+      - name: Print Message  # FIXED: steps must be indented under 'run-script'
+        run: echo "Schedule Workflow"
